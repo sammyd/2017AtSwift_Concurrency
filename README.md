@@ -1,7 +1,7 @@
 # Concurrency on iOS
 ## queueing for the futures
 
-This playground accompanies the talk I presented at SwiftConf 2016.
+This playground accompanies the talk I presented at @Swift 2017.
 
 It requires Xcode 8 or later, although no guarantees that the syntax hasn't changed since I wrote it.
 
