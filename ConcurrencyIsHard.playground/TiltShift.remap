@@ -1,0 +1,28 @@
+[
+ {
+  "file": "/Users/sam/dev/razeware/talks/2016_360iDev/ConcurrencyWorkshop/ConcurrencyIsHard.playground/Sources/TiltShift.swift",
+  "offset": 1154,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sam/dev/razeware/talks/2016_360iDev/ConcurrencyWorkshop/ConcurrencyIsHard.playground/Sources/TiltShift.swift",
+  "offset": 1226,
+  "remove": 1,
+  "text": "n",
+ },
+ {
+  "file": "/Users/sam/dev/razeware/talks/2016_360iDev/ConcurrencyWorkshop/ConcurrencyIsHard.playground/Sources/TiltShift.swift",
+  "offset": 1368,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sam/dev/razeware/talks/2016_360iDev/ConcurrencyWorkshop/ConcurrencyIsHard.playground/Sources/TiltShift.swift",
+  "offset": 1416,
+  "remove": 2,
+ },
+ {
+  "file": "/Users/sam/dev/razeware/talks/2016_360iDev/ConcurrencyWorkshop/ConcurrencyIsHard.playground/Sources/TiltShift.swift",
+  "offset": 1447,
+  "remove": 9,
+ }
+]

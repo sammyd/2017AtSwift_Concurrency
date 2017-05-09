@@ -1,0 +1,28 @@
+[
+ {
+  "file": "/Users/sam/dev/razeware/talks/2016_360iDev/ConcurrencyWorkshop/ConcurrencyIsHard.playground/Sources/NetworkSimulator.swift",
+  "offset": 1169,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sam/dev/razeware/talks/2016_360iDev/ConcurrencyWorkshop/ConcurrencyIsHard.playground/Sources/NetworkSimulator.swift",
+  "offset": 1251,
+  "remove": 1,
+  "text": "n",
+ },
+ {
+  "file": "/Users/sam/dev/razeware/talks/2016_360iDev/ConcurrencyWorkshop/ConcurrencyIsHard.playground/Sources/NetworkSimulator.swift",
+  "offset": 1335,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/sam/dev/razeware/talks/2016_360iDev/ConcurrencyWorkshop/ConcurrencyIsHard.playground/Sources/NetworkSimulator.swift",
+  "offset": 1383,
+  "remove": 2,
+ },
+ {
+  "file": "/Users/sam/dev/razeware/talks/2016_360iDev/ConcurrencyWorkshop/ConcurrencyIsHard.playground/Sources/NetworkSimulator.swift",
+  "offset": 1414,
+  "remove": 9,
+ }
+]
