@@ -39,16 +39,16 @@ PlaygroundPage.current.liveView = view
 //: The following completely independent animations now use the dispatch group so that you can determine when all of the animations have completed:
 UIView.animate(withDuration: 1, animations: {
   box.center = CGPoint(x: 150, y: 150)
-  }, completion: {
+  }, group: animationGroup, completion: {
     _ in
     UIView.animate(withDuration: 2, animations: {
       box.transform = CGAffineTransform(rotationAngle: .pi/4)
-      }, completion: .none)
+    }, group: animationGroup, completion: .none)
 })
 
 UIView.animate(withDuration: 4, animations: {
   view.backgroundColor = #colorLiteral(red: 0.9898764491, green: 0.7441664934, blue: 0.1842373013, alpha: 1)
-  }, completion: .none)
+  }, group: animationGroup, completion: .none)
 
 
 //: `dispatch_group_notify()` allows you to specify a block that will be executed only when all the blocks in that dispatch group have completed:
