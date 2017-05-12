@@ -76,6 +76,9 @@ duration {
 
 //: Check that all operations have filtered the image as expected
 let output = operations.flatMap { $0.outputImage }
-output
+output[0]
+output[1]
+output[2]
+output[3]
 
 //: [➡ Operation Async](@next)
