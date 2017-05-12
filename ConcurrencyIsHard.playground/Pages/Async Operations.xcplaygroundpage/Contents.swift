@@ -94,13 +94,7 @@ class ImageLoadOperation: AsyncOperation {
   var outputImage: UIImage?
   
   override func main() {
-    duration {
-      simulateAsyncNetworkLoadImage(named: self.inputName) {
-        [unowned self] (image) in
-        self.outputImage = image
-        self.state = .Finished
-      }
-    }
+    // TODO
   }
 }
 

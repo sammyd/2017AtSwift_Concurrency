@@ -13,7 +13,7 @@ import PlaygroundSupport
 
 //: Create a new animation function on `UIView` that wraps an existing animation function, but now takes a dispatch group as well.
 extension UIView {
-  static func animateWithDuration(_ duration: TimeInterval, animations: @escaping () -> Void, group: DispatchGroup, completion: ((Bool) -> Void)?) {
+  static func animate(withDuration duration: TimeInterval, animations: @escaping () -> Void, group: DispatchGroup, completion: ((Bool) -> Void)?) {
     group.enter()
     animate(withDuration: duration, animations: animations) { (success) in
       completion?(success)
@@ -37,18 +37,18 @@ view.addSubview(box)
 PlaygroundPage.current.liveView = view
 
 //: The following completely independent animations now use the dispatch group so that you can determine when all of the animations have completed:
-UIView.animateWithDuration(1, animations: {
+UIView.animate(withDuration: 1, animations: {
   box.center = CGPoint(x: 150, y: 150)
-  }, group: animationGroup, completion: {
+  }, completion: {
     _ in
-    UIView.animateWithDuration(2, animations: {
+    UIView.animate(withDuration: 2, animations: {
       box.transform = CGAffineTransform(rotationAngle: .pi/4)
-      }, group: animationGroup, completion: .none)
+      }, completion: .none)
 })
 
-UIView.animateWithDuration(4, animations: {
+UIView.animate(withDuration: 4, animations: {
   view.backgroundColor = #colorLiteral(red: 0.9898764491, green: 0.7441664934, blue: 0.1842373013, alpha: 1)
-  }, group: animationGroup, completion: .none)
+  }, completion: .none)
 
 
 //: `dispatch_group_notify()` allows you to specify a block that will be executed only when all the blocks in that dispatch group have completed:
