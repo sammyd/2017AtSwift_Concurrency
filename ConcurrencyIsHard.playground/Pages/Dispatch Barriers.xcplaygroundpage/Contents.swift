@@ -48,7 +48,17 @@ nameChangeGroup.wait()
 class ThreadSafePerson: Person {
   let isolationQueue = DispatchQueue(label: "com.raywenderlich.person.isolation", attributes: .concurrent)
   
-  // TODO
+  override func changeName(firstName: String, lastName: String) {
+    isolationQueue.async(flags: .barrier) {
+      super.changeName(firstName: firstName, lastName: lastName)
+    }
+  }
+  
+  override var name: String {
+    return isolationQueue.sync {
+      return super.name
+    }
+  }
 }
 
 
