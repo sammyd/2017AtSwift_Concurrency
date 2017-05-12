@@ -47,7 +47,12 @@ class TiltShiftOperation: Operation {
   var outputImage: UIImage?
   
   override func main() {
-    // TODO
+    if let dependencyImageProvider = dependencies
+      .filter({ $0 is FilterDataProvider })
+      .first as? FilterDataProvider,
+      inputImage == .none {
+      inputImage = dependencyImageProvider.outputImage
+    }
     outputImage = tiltShift(image: inputImage)
   }
 }
@@ -55,7 +60,13 @@ class TiltShiftOperation: Operation {
 
 //: Rather than coding directly to concrete implementations, define a protocol that represents _"an object that can provide data to an image filter"_. This makes the code that searches dependencies far less brittle.
 
-// TODO
+protocol FilterDataProvider {
+  var outputImage: UIImage? { get }
+}
+
+extension ImageLoadOperation: FilterDataProvider  {
+  
+}
 
 
 /*:
@@ -86,7 +97,7 @@ imageLoad.inputName = "train_day.jpg"
 
 
 //: And set the dependency chain
-filter.addDependency(imageLoad)
+imageLoad |> filter
 
 //: Add both operations to the operation queue
 let queue = OperationQueue()
