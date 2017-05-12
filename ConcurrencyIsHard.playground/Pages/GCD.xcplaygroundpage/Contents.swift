@@ -1,4 +1,4 @@
-//: [⬅ NSOperation in Practice](@previous)
+//: [⬅ Operation in Practice](@previous)
 /*:
  ## GCD Queues
  [NS]Operation queues are built on top of a technology called `libdispatch`, or *Grand Central Dispatch*. This is an advanced open-source technology that underpins concurrent programming on Apple technologies. It uses the now-familiar queuing model to greatly simplify concurrent programming, up until recently via a C-level interface. However, Swift 3 has greatly improved the GCD API, so it's no longer nearly as challenging.

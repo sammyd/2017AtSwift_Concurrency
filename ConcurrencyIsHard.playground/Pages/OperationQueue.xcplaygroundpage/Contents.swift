@@ -1,5 +1,5 @@
 /*:
- [⬅ NSOperation](@previous)
+ [⬅ Operation](@previous)
  
  ## [NS]OperationQueue
  
@@ -41,9 +41,10 @@ var operations = [TiltShiftOperation]()
  - important:
  Adding operations to a queue is really "cheap"; although the operations can start executing as soon as they arrive on the queue, adding them is completely asynchronous.
  \
- You can see that here, with the result of the `duration` function:
+You can see that here, with the result of the `duration` function:
  
  */
+
 duration {
   for image in images {
     let op = TiltShiftOperation()
@@ -60,9 +61,12 @@ duration {
  You can control the maximum number of operations that a queue can execute simultaneously with the `maxConcurrentOperationCount` property. Setting this to `1` makes the queue a *serial* queue.
  \
  \
- Try changing the value of this property below to see how it affects the time it takes for the queue to finish processing all operations
+Try changing the value of this property below to see how it affects the time it takes for the queue to finish processing all operations.
+ \
+_You'll find that this doesn't actually work—you need to set this property __before__ you add the operations to the queue._
  */
-queue.maxConcurrentOperationCount = 2
+
+queue.maxConcurrentOperationCount = 1
 
 duration {
   queue.waitUntilAllOperationsAreFinished()
@@ -74,4 +78,4 @@ duration {
 let output = operations.flatMap { $0.outputImage }
 output
 
-//: [➡ NSOperation Async](@next)
+//: [➡ Operation Async](@next)

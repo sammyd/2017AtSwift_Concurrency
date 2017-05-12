@@ -1,4 +1,4 @@
-//: [⬅ Chaining NSOperations](@previous)
+//: [⬅ Chaining Operations](@previous)
 /*:
  ## [NS]Operations in Practice
  
@@ -131,7 +131,7 @@ tableView.prefetchDataSource = ds
 
 /*:
  - note:
- This implementation for a table view is not complete, but instead meant to demonstrate how you can use `NSOperation` to improve the scrolling performance.
+ This implementation for a table view is not complete, but instead meant to demonstrate how you can use `Operation` to improve the scrolling performance.
  
  [➡ Grand Central Dispatch](@next)
  */

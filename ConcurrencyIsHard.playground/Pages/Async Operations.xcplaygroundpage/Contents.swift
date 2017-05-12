@@ -1,4 +1,4 @@
-//: [⬅ NSOperationQueue](@previous)
+//: [⬅ OperationQueue](@previous)
 /*:
  ## Wrapping Asynchronous Functions in [NS]Operation
  
@@ -119,4 +119,4 @@ duration {
 imageLoad.outputImage
 
 
-//: [➡ NSOperation Dependencies](@next)
+//: [➡ Operation Dependencies](@next)

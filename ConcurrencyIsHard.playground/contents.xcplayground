@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='false' last-migration='0800'>
     <pages>
-        <page name='NSOperation'/>
-        <page name='NSOperationQueue'/>
+        <page name='Operation'/>
+        <page name='OperationQueue'/>
         <page name='Async Operations'/>
         <page name='Operation Dependencies'/>
         <page name='Operations in Practice'/>

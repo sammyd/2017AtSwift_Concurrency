@@ -1,15 +1,15 @@
 /*:
- # iOS Concurrency: Queueing into the Future
- ## SwiftConf 2016
+ # Concurrency on iOS
+ ## @Swift 2017
  ## Sam Davies · [@iwantmyrealname](https://twitter.com/iwantmyrealname)
  
- This playground forms the basis of a talk presented at SwiftConf 2016 in Cologne, Germany.
+ This playground forms the basis of a talk presented at @Swift 2017, in Shenzhen, China.
  
  The following represents the pages contained within this playground
  
- - [NSOperation](NSOperation)
- - [NSOperationQueue](NSOperationQueue)
- - [Wrapping Aysnc Functions in NSOperation](Async%20Operations)
+ - [Operation](Operation)
+ - [OperationQueue](OperationQueue)
+ - [Wrapping Aysnc Functions in Operation](Async%20Operations)
  - [Inter-Operation Dependencies](Operation%20Dependencies)
  - [Operations in Practice](Operations%20in%20Practice)
  - [Grand Central Dispatch](GCD)
@@ -82,5 +82,5 @@ mySecondOperation.start()
 mySecondOperation.outputImage
 
 
-//: [➡NSOperationQueue](NSOperationQueue)
+//: [➡ OperationQueue](@next)
 

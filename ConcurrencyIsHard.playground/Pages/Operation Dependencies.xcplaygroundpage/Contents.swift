@@ -1,4 +1,4 @@
-//: [Previous](@previous)
+//: [Async Dependencies](@previous)
 /*:
  ## Chaining [NS]Operations
  
@@ -17,7 +17,7 @@
  - Apply a second filter to the image
  - Display the image
  \
- Each of these tasks could be modelled as an `Operation`, and the dependencies architecture would ensure that each operation will only begin once the appropriate data has been produced from a previous operation.
+Each of these tasks could be modelled as an `Operation`, and the dependencies architecture would ensure that each operation will only begin once the appropriate data has been produced from a previous operation.
  
  This approach allows you to break down complex tasks into smaller, reusable operations which compose together nicely. It can lead to cleaner code. However, be warned that as with any asynchronous code, debugging can become more challenging.
  
@@ -109,4 +109,4 @@ duration {
 filter.outputImage
 
 
-//: [➡ NSOperation in Practice](@next)
+//: [➡ Operation in Practice](@next)
