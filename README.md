@@ -1,5 +1,4 @@
 # Concurrency on iOS
-## queueing for the futures
 
 This playground accompanies the talk I presented at @Swift 2017.
 
